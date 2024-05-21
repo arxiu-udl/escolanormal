@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/josep.ballber/ontologies/2024/3/EscolaNormal-ontology/"
+     xml:base="http://www.semanticweb.org/josep.ballber/ontologies/2024/3/EscolaNormal-ontology/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://purl.org/vocab/changeset/schema#"
+     xmlns:ontology="https://www.ica.org/standards/RiC/ontology#">
+    <owl:Ontology rdf:about="http://escolanormal.udl.cat/RiC/EN-Lleida_0-1.rdf">
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
+        <owl:imports rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/changeset/schema#changeReason -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/changeset/schema#changeReason"/>
+    
+
+
+    <!-- http://purl.org/vocab/changeset/schema#createdDate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/changeset/schema#createdDate"/>
+    
+
+
+    <!-- http://purl.org/vocab/changeset/schema#creatorName -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/changeset/schema#creatorName"/>
+    
+
+
+    <!-- http://purl.org/vocab/changeset/schema#subjectOfChange -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/changeset/schema#subjectOfChange"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/changeset/schema#ChangeSet -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/changeset/schema#ChangeSet"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/actionsGranted"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/agentType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/contentLocationType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/copyrightStatus"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/environmentCharacteristic"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/environmentFunctionType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/environmentPurpose"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/environmentRegistryRole"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/eventOutcome"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/eventRelatedAgentRole"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/eventRelatedObjectRole"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/eventType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/formatRegistryRole"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/hardwareType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/inhibitorTarget"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/inhibitorType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/linkingAgentRoleEvent"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/linkingEnvironmentRole"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/objectCategory"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/preservationLevelRole"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/preservationLevelType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/relationshipSubType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/relationshipType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/rightsBasis"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/rightsRelatedAgentRole"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/signatureEncoding"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/signatureMethod"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/softwareType"/>
+        <skos:hasTopConcept rdf:resource="http://id.loc.gov/vocabulary/preservation/storageMedium"/>
+        <rdfs:label xml:lang="en">Preservation Schemes (all)</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://purl.org/vocab/changeset/schema#ChangeSet"/>
+                <schema:changeReason>new</schema:changeReason>
+                <schema:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-08-01T00:00:01</schema:createdDate>
+                <schema:creatorName rdf:resource="http://id.loc.gov/vocabulary/dlc"/>
+                <schema:subjectOfChange rdf:resource="http://id.loc.gov/vocabulary/preservation"/>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://purl.org/vocab/changeset/schema#ChangeSet"/>
+                <schema:changeReason>modified</schema:changeReason>
+                <schema:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-24T00:00:01</schema:createdDate>
+                <schema:creatorName rdf:resource="http://id.loc.gov/vocabulary/dlc"/>
+                <schema:subjectOfChange rdf:resource="http://id.loc.gov/vocabulary/preservation"/>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/actionsGranted -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/actionsGranted"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/agentType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/agentType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/contentLocationType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/contentLocationType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/copyrightStatus -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/copyrightStatus"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/environmentCharacteristic -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/environmentCharacteristic"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/environmentFunctionType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/environmentFunctionType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/environmentPurpose -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/environmentPurpose"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/environmentRegistryRole -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/environmentRegistryRole"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/eventOutcome -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/eventOutcome"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/eventRelatedAgentRole -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/eventRelatedAgentRole"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/eventRelatedObjectRole -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/eventRelatedObjectRole"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/eventType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/eventType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/formatRegistryRole -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/formatRegistryRole"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/hardwareType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/hardwareType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/inhibitorTarget -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/inhibitorTarget"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/inhibitorType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/inhibitorType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/linkingAgentRoleEvent -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/linkingAgentRoleEvent"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/linkingEnvironmentRole -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/linkingEnvironmentRole"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/objectCategory -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/objectCategory"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/preservationLevelRole -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/preservationLevelRole"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/preservationLevelType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/preservationLevelType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/relationshipSubType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/relationshipSubType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/relationshipType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/relationshipType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/rightsBasis -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/rightsBasis"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/rightsRelatedAgentRole -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/rightsRelatedAgentRole"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/signatureEncoding -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/signatureEncoding"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/signatureMethod -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/signatureMethod"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/softwareType -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/softwareType"/>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/storageMedium -->
+
+    <owl:NamedIndividual rdf:about="http://id.loc.gov/vocabulary/preservation/storageMedium"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
